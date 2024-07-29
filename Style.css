@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    /* ya border-box ya kaam kare ga ky jo hum border ya padding dy gy wo 
+    is content ki height or width my hi count hoan chy.. yani agr my ny border or padding set ki hy 
+    to wo is height or width my hi count ho yani content ka size chota ho jaye*/
+    border: border-box;
+}
+/* ======================================================================================================= */
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    /* kyo ky box 2 line ky sath jora hoa tha to cross-axis sy align center ky liya hum ya prperty use kare gy */
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Box1 */
+.nav-logo{
+    height: 50px;
+    width: 100px;
+}
+.logo{
+    background-image: url(logo2.PNG);
+    height: 50px;
+    width: 100%;
+    background-size: cover;
+
+}
+.border{
+    border: 1.5px solid transparent;
+}
+.border:hover{
+    border: 1.5px solid white;
+}
+
+/* Box 2 */
+
+
+.add-first{
+    /* rem my font size dy ga ky zara website responsive ho  */
+    font-size: 0.85rem; 
+    color: #cccccc;
+    margin-left: 15px;
+}
+.add-second{
+    /* rem my font size dy ga ky zara website responsive ho  */
+    font-size: 1rem; 
+    margin-left: 3px;
+}
+.add-icon{
+    display: flex;
+    align-items: center;
+
+}
+
+/* Box 3  */
+
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    width: 620px;
+    height: 40px;
+    
+    border-radius: 7px;
+}
+.search-select{
+      background-color: #f3f3f3;
+      width: 50px;
+      text-align: center;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+      border: none;
+}
+.search-input{
+    width:100%;
+    font-size: 0.85rem;
+    border:none;
+}
+.search-icon{
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#0f1111;
+    font-size: 1.2rem;
+    background-color: #93e8e8;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    
+    
+}
+.nav-search:hover{
+    border: 2px solid  #93e8e8;
+}
+/* BOx 4 */
+.nav-loc{
+    height: 50px;
+     padding: 0px 9px 5px 9px;
+    display: flex;
+    align-items: center;
+
+    
+}
+.flag-icon{
+    background-image: url(flag_icon.png);
+    background-size: cover;
+    width: 18px;
+    height: 25px;
+    margin-top: 4.5px;
+}
+.select-loc{
+    height: 15px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #0f1111;
+    border: none;
+    margin-top:5px;
+    margin-left: 2px;
+    font-weight: bolder;
+}
+.arrow-icon{
+    margin-top: 6.7px;
+    margin-left: 2px;
+    font-size: 11.4px;
+    color: #cccccc ;
+}
+
+/* Box 5 */
+.nav-signin{
+    padding: 9px 9px 10px 9px;
+}
+.signin-first{
+    height: 14px;
+    font-size: 12px;
+    color: #ffffff;
+    
+}
+.signin-second{
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    
+}
+.arrow-icon2{
+   
+    font-size: 11px;
+    color: #cccccc ;
+    
+
+}
+/* Box 6  */
+.nav-order{
+    padding: 9px 9px 10px 9px;
+}
+
+/* Box 7 */
+.nav-cart{
+    padding: 9px 9px 10px 9px;
+    display: flex;
+}
+.cart-icon{
+    font-size: 30px;
+}
+.cart-text{
+    font-size:16px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+/* ======================================================================================================== */
+/* PANEL DESIGN */
+.panel{
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.panel-opt p{
+    display: inline;
+    margin-left: 15px;
+}
+.panel-opt{
+    width: 70%;
+    font-size: 0.85rem;
+    
+}
+.panel-deals{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/* =========================================================================================================== */
+
+/* HERO-SECTION */
+.hero-section{
+    background-image: url(image_1.jpg);
+    background-size: cover;
+    height: 500px;
+    z-index: 1;
+    
+
+}
+
+/* ==================================================================================================== */
+
+/* Shop SECTION */
+.shop-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #e2e7e6;
+    
+    
+}
+.box{
+    height: 380px;
+    width: 31%;
+    background-color: #ffffff;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    
+    
+}
+.box-image{
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.box-content a{
+    color: #007185;
+    text-decoration: none;
+}
+
+.box-content a:hover{
+    color:rgb(255,0,0,0.6);
+}
+
+.box-relative{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top:-290px;
+    z-index:2;
+}
+.box-margin1{
+    width:100%;
+    margin-top:-290px;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: aqua; */
+}
+.box-margin2{
+    width:100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+/* ======================================================================================================== */
+/* Sign in  */
+.hero-signin{
+    height: 130px;
+    width: 100%;
+    border: 1.3px solid #e2e7e6;
+    border-radius: 5px;
+    margin: 40px;
+    margin-left: 0px;
+
+
+}
+.signin-text1{
+       
+    font-size: 13px;
+    color:#0f1111 ;
+    margin-bottom: 5px;
+}
+
+/* button{
+    height: 28px;
+    width: 230px;
+    background-color: orange;
+    border: none;
+    border-radius: 4px;
+}
+button a{
+    text-decoration: none;
+    color: #0f1111;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: linear-gradient(to bottom, #f0c14b, #f7dfa5);
+} */
+
+
+.start-here p{
+    font-size: 11px;
+    color: #0f1111;
+    
+}
+.start-here {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+
+
+}
+
+.start-here a{
+    text-decoration: none;
+    font-size: 11px;
+    color:rgb(32,158,137);
+    margin-left: 3px;
+    font-weight: 400;
+}
+.start-here a:hover{
+    color: rgb(255,0,0,0.8); ;
+}
+.signin-content{
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.sign-in-button {
+    
+    /* style for anchor-box shape */
+    
+    background: linear-gradient(to bottom, #f7dfa5, #e7af1f);
+    border: 1px solid #a88734;
+    border-radius: 3px;
+    height: 10px;
+    width: 190px;
+   
+    /* style of font of anchor tag */
+    
+   font-weight: 750;
+    color: #111;
+    padding: 10px 20px;
+    font-size: 13px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+.sign-in-button:hover {
+    background: linear-gradient(to bottom, #ebb52b, #f7dfa5);
+}
+
+/* FOOTER PANEL */
+
+.footer-panel1{
+    height: 50px;
+    width: 100%;
+    background-color:  #2d3947;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-panel1 a{
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back{
+    height: 50px;
+    width: 100%;
+}
+.back:hover{
+    background-color:#37475a ;
+}
+
+/* Footer panel 2 */
+.footer-panel2{
+
+    background-color: #222f3d;
+    height:300px ;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+ul a{
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #dddddd;
+}
+ul a:hover{
+    text-decoration: underline;
+}
+ul p{
+    font-size: 16px;
+    margin-top: 50px;
+    font-weight: 700;
+}
+/* footer PANEL 3 */
+
+.footer-panel3{
+    height: 100px;
+    background-color: #222f3d;
+    border-top: 0.3px solid #dddddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.panel3-content{
+    display: flex;
+}
+.panel3-content a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panel3-image{
+    background-image: url(footer-logo.png);
+    height: 50px;
+    width: 100px;
+    background-size: cover;
+    margin-right: 70px;
+}
+.footer-divs{
+       height: 30px;
+       width: 150px;
+       border: 1px solid #dddddd;
+       color: #cccccc;
+       border-radius: 4px;
+       display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+       font-size: 14px;
+       margin-right: 20px;
+}
+.language{
+       height: 30px;
+       width: 100px;
+       border: 1px solid #dddddd;
+       color: #cccccc;
+       border-radius: 4px;
+       display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+       font-size: 14px;
+       margin-right: 20px;
+}
+
+/* =========================================================================================== */
+
+.footer-panel4{
+    background-color: #0f1111;
+    color: #dddddd;
+    height: 100px;
+    text-align: center;
+    font-size: 12px;
+
+}
+.pages{
+    padding-top: 25px;
+}
+.pages a{
+    margin-right: 5px;
+    font-size: 12px;
+    text-decoration: none;
+    color:#dddddd;
+}
+.pages a:hover{
+    text-decoration: solid underline;
+
+}
+.copyright{
+    padding-top: 5px;
+}
+
